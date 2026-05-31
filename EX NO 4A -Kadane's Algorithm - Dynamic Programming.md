@@ -74,6 +74,7 @@ public class SolarEnergyMaximizer {
 
 ## Output:
 
+<img width="442" height="242" alt="output1" src="https://github.com/user-attachments/assets/2d4c75ed-67a5-4a34-8a31-4b22425dadcb" />
 
 
 ## Result:
