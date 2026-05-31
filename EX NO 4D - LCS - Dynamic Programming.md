@@ -1,6 +1,6 @@
 
 # EX 4D Longest Common SubSequence - Dynamic Programming.
-## DATE:
+## DATE: 15/05/2026
 ## AIM:
 To write a Java program to for given constraints.
 Given two strings text1 and text2, return the length of their longest common subsequence. If there is no common subsequence, return 0.
@@ -18,19 +18,58 @@ Constraints:
 text1 and text2 consist of only lowercase English characters.
 
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+1. Start the program and read the two input strings text1 and text2.
+2. Create a 2D dynamic programming array dp of size (n+1) × (m+1) initialized with 0, where n and m are the lengths of the strings.
+3. Traverse both strings character by character using nested loops.
+4. If the characters at the current positions match, update dp[i][j] = 1 + dp[i-1][j-1]; otherwise, set dp[i][j] as the maximum of dp[i-1][j] and dp[i][j-1].
+5. Print the value stored in dp[n][m] as the length of the longest common subsequence and stop the program. 
 
 ## Program:
 ```
-/*
 Program to implement Reverse a String
-Developed by: 
-Register Number:  
-*/
+Developed by: Krishna Prasad S
+Register Number: 212223230108
+```
+```java
+import java.util.*;
+
+public class Solution {
+
+    public int longestCommonSubsequence(String text1, String text2) 
+    {
+        int n = text1.length();
+        int m = text2.length();
+        int[][] dp = new int[n + 1][m + 1];
+        for (int i = 1; i <= n; i++)
+        {
+            for (int j = 1; j <= m; j++) 
+            {
+                if (text1.charAt(i - 1) == text2.charAt(j - 1)) 
+                {
+                    dp[i][j] = 1 + dp[i - 1][j - 1];
+                } 
+                else 
+                {
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+                }
+            }
+        }
+        return dp[n][m];
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Solution sol = new Solution();
+
+        String text1 = sc.nextLine().replaceAll("\"", "");
+        String text2 = sc.nextLine().replaceAll("\"", "");
+
+        int lcsLength = sol.longestCommonSubsequence(text1, text2);
+        System.out.println("Length of Longest Common Subsequence: " + lcsLength);
+
+        sc.close();
+    }
+}
 ```
 
 ## Output:
