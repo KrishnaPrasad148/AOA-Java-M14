@@ -62,6 +62,7 @@ public class FrogJump {
 
 ## Output:
 
+<img width="366" height="204" alt="output2" src="https://github.com/user-attachments/assets/c1889cd7-16ae-45f7-8e3b-f0283964fabe" />
 
 
 ## Result:
