@@ -68,6 +68,7 @@ public class LongestIncreasingSubsequence {
 
 ## Output:
 
+<img width="1122" height="243" alt="output5" src="https://github.com/user-attachments/assets/357dd9d9-d509-44f4-a94d-f2b7b2ef86be" />
 
 
 ## Result:
