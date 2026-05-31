@@ -74,6 +74,7 @@ public class Solution {
 
 ## Output:
 
+<img width="954" height="230" alt="otuput4" src="https://github.com/user-attachments/assets/6ecc36c7-094c-418f-b625-3b1db6a4d420" />
 
 
 ## Result:
